@@ -1,11 +1,13 @@
+<template>
+  <div>
+    <router-view /> <!-- Сюда будут рендериться маршруты -->
+  </div>
+</template>
+
 <script>
 
 </script>
 
-<template>
-
-</template>
-
-<style scoped>
+<style>
 
 </style>
