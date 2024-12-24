@@ -2,8 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-* {
-    padding: 0;
-    margin: 0;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  * {
+    @apply text-grayText;
+  }
+}
+
+@layer base {
+  :root {
+    --purple: '#ff00f2';
+    --grayText: '#B9B9B9';
+    --blackField: '#1C1C1C';
+    --purpleHover: '#7f008d';
+    --brightPurple: '#c600d5';
+    --white: '#ffffff';
+  }
+  html{
+    font-family: theme('fontFamily.sans')
+  }
 }
